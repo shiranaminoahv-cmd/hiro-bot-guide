@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141d">
+  <meta name="description" content="篠澤広 Bot の使い方・機能・コマンドをまとめた利用ガイドです。">
+  <title>HIRO BOT | Documentation</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#top" aria-label="HIRO BOT ホーム">
+        <span class="brand-mark">H</span>
+        <span><strong>HIRO BOT</strong><small>DOCUMENTATION</small></span>
+      </a>
+      <div class="side-label">GUIDE</div>
+      <nav id="navigation" aria-label="マニュアル">
+        <button class="nav-item active" data-page="overview"><span>⌂</span> はじめに</button>
+        <button class="nav-item" data-page="basic"><span>◈</span> 基本的な使い方</button>
+        <button class="nav-item" data-page="memory"><span>◎</span> 記憶・会話機能</button>
+        <button class="nav-item" data-page="walk"><span>⌁</span> 散歩記録</button>
+        <button class="nav-item" data-page="style"><span>✳</span> 口調・返答設定</button>
+        <button class="nav-item" data-page="schedule"><span>▦</span> 予定・通知 <em>準備中</em></button>
+        <button class="nav-item" data-page="faq"><span>?</span> よくある質問</button>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="status-dot"></span> Bot Guide
+        <small>最終更新：<span id="updated-side">2026-11-21</span></small>
+      </div>
+    </aside>
+
+    <main class="main" id="top">
+      <header class="topbar">
+        <button class="mobile-menu" id="menu-toggle" aria-label="メニューを開く">☰</button>
+        <div class="breadcrumb">DOCS <span>/</span> <b id="crumb">はじめに</b></div>
+        <a class="top-link" href="https://discord.com/" target="_blank" rel="noopener">DISCORD ↗</a>
+      </header>
+      <section class="content-wrap">
+        <div class="eyebrow"><span class="eyebrow-line"></span> PRODUCER'S GUIDE</div>
+        <div id="content" class="article" aria-live="polite"></div>
+        <footer class="page-footer">
+          <span>HIRO BOT DOCUMENTATION</span>
+          <span>Unofficial user guide</span>
+        </footer>
+      </section>
+    </main>
+  </div>
+  <div class="scrim" id="scrim"></div>
+  <script src="assets/content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
