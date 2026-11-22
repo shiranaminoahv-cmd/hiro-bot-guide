@@ -23,6 +23,11 @@
     window.scrollTo({top: 0, behavior: "smooth"});
   }
 
+  window.addEventListener("hashchange", () => {
+    const pageId = location.hash.replace("#", "");
+    render(content.pages[pageId] ? pageId : "overview");
+  });
+
   nav.addEventListener("click", event => {
     const button = event.target.closest("[data-page]");
     if (button) render(button.dataset.page);
